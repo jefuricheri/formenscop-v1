@@ -1,0 +1,35 @@
+<app-header></app-header>
+
+<div class="row col-md-3">
+
+<h3>Liste des stagiaires</h3>
+
+</div>
+
+<div class="row col-md-12">
+    
+    <div class="row col-md-11 listePrenom">
+        <table class="table table-success table-striped">
+            <thead>
+                <th>PRÉNOM</th>
+                <th>NOM</th>
+                <th>RÔLE</th>
+                <th>MAIL</th>
+                <th>TÉLÉPHONE</th>
+                <th>ADRESSE</th>            
+            </thead>
+            <tbody>
+                <tr *ngFor="let stagiaire of stagiaires">      
+                    <td>{{stagiaire.prenom}}</td>
+                    <td>{{stagiaire.nom}}</td>
+                    <td>{{stagiaire.role}}</td>
+                    <td>{{stagiaire.mail}}</td>
+                    <td>{{stagiaire.tel}}</td>
+                    <td>{{stagiaire.adresse}}</td>                                                      
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+           

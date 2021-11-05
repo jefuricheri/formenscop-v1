@@ -1,0 +1,51 @@
+.card{
+  max-width: 15em;
+  max-height:10em;
+}
+
+.col{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.85em;
+}
+
+  .card-body{
+    overflow-wrap: anywhere;
+    background-color: #e1f7e6;
+    color: #10547c;
+    font-family: CaviarDreams;
+  }
+  
+.card-title{
+  margin-bottom: 0.15em;
+}
+
+  .title{
+    font-size: 1em;
+    font-family: CaviarDreams_Bold;
+    margin-left: 0.5em;
+  }
+  
+  .contract-date{
+    font-size: 0.7em;
+    margin-top: -0.2em;
+    margin-bottom: 0.2em;
+    margin-left: 0.75em;
+  }
+  
+  .description{
+    font-size: 0.55em;
+    margin-left: 1em;
+  }
+  
+  .view-all{
+    font-size: 2em;
+    line-height: 50%;
+    color: #10547c;
+  }
+  
+  .plus-button:hover{
+    color: #d04453;
+    transition: 0.3s;
+  }

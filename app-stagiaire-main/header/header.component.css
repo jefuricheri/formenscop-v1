@@ -1,0 +1,38 @@
+.container-fluid{
+    margin-bottom: 2em;
+}
+
+nav{
+   
+    background-color: #e1f7e6;
+    font-family: Mont-Heavy;
+}
+
+img{
+    image-rendering: optimizeQuality;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+  color:#10547c;
+  font-size: 1em;
+  margin-top: -0.56em;
+}
+
+a:hover{
+    color: #d04453;
+}
+
+
+ul{
+    padding:0.48em;
+    
+}
+
+img{
+    padding:0.48em;
+}
+

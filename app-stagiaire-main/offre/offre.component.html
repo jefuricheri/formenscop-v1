@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Offres</title>
+      </head>
+
+<app-header></app-header>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col" *ngFor="let offre of offres">
+    <div class="card-element card rounded-0 border-0 overflow-hidden">
+      <div class="row">
+          <div class="card-body">
+            <h1 class="title card-title">{{offre.titre}}</h1>
+            <p class="contract-date card-text">{{offre.date}}</p>
+            <p class="description card-text">{{offre.descriptif}}</p>
+          </div>
+          <div class="position-relative">
+              <a href="#" class="plus-button no-gutters view-all btn position-absolute bottom-0 end-0">+</a>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+
+      
+    </div>
+  </div>

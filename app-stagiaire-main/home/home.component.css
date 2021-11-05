@@ -1,0 +1,24 @@
+*{
+    color: #10547c;
+}
+
+h3{
+    margin-left: 1.8em;
+    margin-top: 0.45em;
+    font-size: 1em;
+    font-family: KeepCalm-Medium;
+}
+
+.bienvenue, .sec_plan{
+    display: inline-block;
+    vertical-align:text-bottom;
+}
+
+.text_plan{
+    font-size: 0.85em;
+}
+
+.container{
+    color: red;
+    height: 800px;
+}

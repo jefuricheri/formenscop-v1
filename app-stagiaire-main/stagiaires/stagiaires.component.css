@@ -1,0 +1,29 @@
+*{
+    color: #10547c;
+}
+
+h3{
+    padding: 12px;
+    margin-left: 95px;
+    margin-top: 18px;
+    font-family: Mont-heavy;
+}
+
+table,
+    td {
+        border: 1px solid #333;
+        font-family: CaviarDreams;
+}
+
+.listePrenom{
+    margin: auto;
+    
+}
+
+th{
+    font-family: CaviarDreams_Bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,59 @@
+.fixed{
+    z-index: 7;
+    position: fixed;
+    width: 100%;
+    height: 4.3em;
+    transition: 0.2s ease-in;
+    top: 0;
+}
+
+.nofixed{
+    top: -2.15em;
+  transition: 0.2s ease-in;
+}
+
+.NavBar{
+    background-color: #e1f7e6;
+    font-family: Mont-Heavy;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+  color:#10547c;
+  font-size: 1em;
+  margin-top: -0.2em;
+}
+
+a:hover{
+    color:  #d04453;
+    transition: 0.3s;
+}
+
+.button-right{
+    margin-right: 0.5em;
+}
+
+.logo {
+    margin-right: auto;
+	width: 18.92em;
+	height: auto;
+	position: relative;
+	display: inline-block;
+    margin-bottom: 0.2em;
+}
+
+.logo .logo_hover {
+    position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.logo:hover .logo_hover {
+	display: inline-block;
+    transition: 0.3s;
+    opacity: 0;
+}

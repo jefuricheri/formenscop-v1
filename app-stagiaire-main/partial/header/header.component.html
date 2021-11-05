@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+      </head>
+
+<header>
+<div class="container-fluid NavBar" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+
+    <ul class="navbar navbar-expand-sm justify-content-end"> 
+
+            <li class="logo nav-item">
+                <a href="/"><img class="logo_hover img-fluid nav-item row" src="assets/img/FG_logo_formenscop.png" alt="logo formenscop"></a>
+                <a href="/"><img class="logo img-fluid nav-item row" src="assets/img/FG_logo_formenscop_hover.png" alt="logo formenscopHover"></a>
+            </li>
+
+            <li class="nav-item button_nav">
+                <a  class="nav-link active" aria-current="page" href="/module">Modules</a>
+            </li>
+
+            <li class="nav-item button_nav">
+                <a class="nav-link" href="/offre">Emplois</a>
+            </li>
+
+            <li class="nav-item button_nav">
+                <a class="nav-link" href="#">Chat</a>
+            </li>
+
+            <li class="nav-item button_nav">
+                <a class="nav-link" href="/planning">Planning</a>
+            </li>
+        
+            <li class="nav-item button_nav button-right">
+                <a class="nav-link" href="/stagiaire">Stagiaires</a>
+            </li>
+    </ul>
+</div>
+
+
+
+</header>
+</html>

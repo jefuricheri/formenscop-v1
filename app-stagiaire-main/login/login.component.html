@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+      </head>
+
+<body>
+<div class="container-fluid">
+<div class="row positionLogo">
+    <img src="assets/img/FG_logo_formenscop.png" class="img-fluid logo" alt="logo">
+</div>
+<div class="row justify-content-center positionLogo">
+    <section class="col-3 loginFenetre justify-content-center p-3">
+        <h1 class="connexion white text-center mt-3">CONNEXION</h1>
+        <form>
+            <div class="row justify-content-center p-4">
+                <select class="inputLogin texte classic">
+                    <option selected>Rôle</option>
+                    <option value="0">Stagiaire</option>
+                    <option value="1">Salarié</option>
+                    <option value="2">Ress. Humaine</option>
+                    <option value="3">Entreprise</option>
+                </select>
+            </div>
+            <div class="row justify-content-center p-4 texte">
+                <input type="email" name="mail" class="inputLogin " placeholder="Adresse Mail" pattern="^[\\w\\-]+(\\.[\\w\\-]+)*@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$">
+            </div>
+            <div class="row justify-content-center p-4 texte">
+                <input type="password" name="mdp" class="inputLogin" placeholder="Mot de Passe" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" minlength="7">
+            </div>
+            <div class="connexion-btn row justify-content-center p-4 texte">
+                <input type="submit" class="btn submit heavy texte" value="Connexion">
+            </div>
+        </form>
+    </section>
+</div>
+</div>
+</body>
+
+</html>

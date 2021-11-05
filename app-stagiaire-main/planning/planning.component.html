@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+</head>
+<body>
+<app-header></app-header>    
+
+<div class="container-fluid">
+<div class="row">
+    <full-calendar [options]="calendarOptions"></full-calendar>
+</div>
+<!-- Modal edit-->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" [ngSwitch]="switch">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" *ngSwitchCase="true">Créer un évènement</h5>
+          <h5 class="modal-title" id="exampleModalLabel" *ngSwitchCase="false">Modifier un évènement</h5>
+        </div>
+        <form>
+            <div class="modal-body">
+              <label for="categorie">Type d'Evenement : </label>
+              <select name="categorie" id="categorie">    
+                <option value="1">Evenement</option>
+                <option value="2">Module</option>
+              </select> <br>
+                <label for="titre">Titre :</label>
+                <input type="text" value="{{ titreEvent }}" #title required> <br>
+                <label for="titre">Date de début :</label>
+                <input type="date" value="{{ startEvent }}" #start required><br>
+                <label for="titre">Date de fin :</label>
+                <input type="date" value="{{ endEvent }}" #end required> <br>
+                <label for="titre">Toute la journée :</label>
+                <input type="checkbox" #allDay><br>
+                <label for="titre">Heure de début :</label>
+                <input type="time" value="{{ timestartEvent }}" #timestart required> <br>
+                <label for="titre">Heure de fin :</label>
+                <input type="time" value="{{ timeendEvent }}" #timeend required> <br>
+
+                <input type="text" value="{{ idEvent }}" #id class="invisible">
+            </div>
+            <div class="modal-footer" >
+                <input type="submit" class="btn btn-primary" data-dismiss="modal" value="Supprimer" (click)="deleteEvent(eventFocused)"*ngSwitchCase="false">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                <input type="submit" class="btn btn-primary" *ngSwitchCase="true" data-dismiss="modal" value="Créer"(click)="createEvent(title.value, start.value, timestart.value, end.value, timeend.value, allDay.checked)">
+                <input type="submit" class="btn btn-primary" *ngSwitchCase="false" data-dismiss="modal" value="Sauvegarder" (click)="updateEvent(title.value, start.value, timestart.value, end.value, timeend.value, allDay.checked)">
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

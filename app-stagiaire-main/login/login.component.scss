@@ -1,0 +1,90 @@
+html, body {
+    background-color: #e1f7e6;
+    position: fixed; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.loginFenetre{
+    background-color: #10547c;
+    overflow-wrap: anywhere;
+}
+
+.logo{
+    max-width: 48%;
+    margin-top: 4em;
+    margin-left: 5em;
+}
+
+.submit{
+    padding: 0;
+    border-radius: 0px;
+    max-width: 140px;
+    height: 40px;
+    color: #10547c;
+}
+
+.inputLogin{
+    border-radius: 0px;
+    max-width: 80%;
+    height: 40px;
+    border: none;
+    background-color: #e1f7e6;
+    font-size: 1.2em;
+}
+
+.texte{
+    font-size: 0.72em;
+}
+
+ input[type="email"]{ 
+    text-align: center;
+    font-size: 1.2em;
+}
+
+input[type="password"]{ 
+    text-align: center;
+    font-size: 1.2em;
+}
+
+select{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0.9em !important;
+}
+
+.inputLogin{
+    font-family: CaviarDreams;
+    color: #10547c;
+} 
+
+.connexion{
+    color: #e1f7e6;
+    font-size: 1.5em;
+    font-family: Quantify;
+}
+
+.submit{
+    color:#10547c;
+    background-color: #d04453;
+    font-size: 1.2em;
+    font-family: Mont-heavy;
+}
+
+.row{
+    padding: 1.2em !important;
+}
+
+.positionLogo{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-left: 0;
+    justify-content: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

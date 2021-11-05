@@ -1,0 +1,29 @@
+.card-element-left{
+  margin: 1em;
+}
+
+.card-body{
+  overflow-wrap: anywhere;
+  background-color: #e1f7e6;
+  color: #10547c;
+  font-family: CaviarDreams;
+}
+
+.title{
+  font-size: 1em;
+  font-family: CaviarDreams_Bold;
+}
+
+.contract-date{
+  font-size: 0.7em;
+}
+
+.description{
+  font-size: 0.55em;
+}
+
+.view-all{
+  font-size: 2em;
+  line-height: 50%;
+  color: #10547c;
+}
