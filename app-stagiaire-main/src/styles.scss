@@ -1,0 +1,40 @@
+/* html, body { overflow-x: hidden; } */
+
+@font-face {
+    font-family: Quantify;
+    src: url(assets/font/Quantify.ttf) format("truetype");
+  }
+  
+  @font-face {
+      font-family: Mont-light;
+      src: url(assets/font/Mont-ExtraLightDEMO.otf) format("opentype");
+    }
+  
+  @font-face {
+    font-family: Mont-heavy;
+    src: url(assets/font/Mont-HeavyDEMO.otf) format("opentype");
+  }
+  
+  
+  @font-face {
+    font-family: CaviarDreams;
+    src: url(assets/font/CaviarDreams.ttf) format("truetype");
+    }
+  
+    @font-face {
+      font-family: CaviarDreams_Bold;
+      src: url(assets/font/CaviarDreams_Bold.ttf) format("truetype");
+      }
+   
+  *{
+      font-size: 25px;
+  }
+  
+  body{
+     background-color: #caddcf;
+  }
+
+  *:focus {
+    outline: none;
+}
+
